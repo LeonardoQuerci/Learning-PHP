@@ -11,4 +11,4 @@ O foco deste repositório é consolidar o conhecimento em:
 
 ## 🚀 Como Executar
 Não precisas de um servidor complexo para testar estes exercícios.
-Estou utilizando o XAMPP para hospedar os códigos.
+Estou utilizando o XAMPP.
