@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculadora em PHP</h2>
+    <form action="calculadora.php" method="post">
+        <!--Pedindo o primeiro número desejado -->
+        <label for="num1">Primeiro número:</label>
+        <input type="number" name="num1" required>
+        <br><br>
+        <!--Pedindo a operação desejada -->
+        <label for="operacao">Operação</label>
+        <select name="operacao">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br><br>
+        <!--Pedindo o segundo número desejado -->
+        <label for="num2">Segundo número:</label>
+        <input type="number" name="num2">
+        <br><br>
+        <!--Botao de enviar-->
+        <input type="submit" value="Calcular operação">
+    </form>
+</body>
+</html>
