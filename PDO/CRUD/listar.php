@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(empty($_SESSION['cpf'])){
+        header("Location: login.php");
+        exit;
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +14,10 @@
     <title>Listar Usuários</title>
 </head>
 <body>
+    <p>
+        Bem vindo, <?php echo $_SESSION['nome'];?>
+        <a href="logout.php">Sair</a>
+    </p>
 
     <h2>Usuários Cadastrados</h2>
 

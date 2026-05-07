@@ -4,7 +4,7 @@
     $cpf   = $_POST['cpf'];
     $nome  = $_POST['nome'];
     $nivel = $_POST['nivel'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
     $erros = [];
 
