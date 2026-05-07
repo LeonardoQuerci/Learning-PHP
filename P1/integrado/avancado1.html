@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>SALVAR ALUNO NO BANCO DE DADOS</h3>
+    <form action="conexao1.php" method="post">
+        ID: <input type="text" name="id" > <br><br>
+        Nome: <input type="text" name="nome" > <br><br>
+        CPF: <input type="text" name="cpf" > <br><br>
+        Email: <input type="text" name="email" > <br><br>
+        <input type="submit" name="gravar" value="Gravar aluno">
+    </form>
+    <br>
+    <hr>
+    <h3>DIGITE O ID DO ALUNO QUE DESEJA VISUALIZAR</h3>
+    <form action="conexao1.php" method="post">
+        ID: <input type="text" name="id">
+        <br><br>
+        <input type="submit" name="visualizar" value="buscar">
+    </form>
+    <br>
+    <hr>
+    <h3>SE DESEJA CARREGAR UM ARRAY COM OS DADOS DO BD</h3>
+    <form action="conexao1.php" method="post">
+        <input type="submit" name="CarregarArray" value="Carregar array">
+    </form>
+</body>
+</html>
